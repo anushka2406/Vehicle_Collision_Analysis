@@ -1,0 +1,29 @@
+{
+  "itemId" : "_TPuMUPVAEe6_cI03PfXi1g",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_Gh-bAPqpEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_GiQu4fqpEe69Pr2slada2A",
+      "name" : "dim_Location_Schema"
+    }, {
+      "id" : "_GiQu4vqpEe69Pr2slada2A",
+      "name" : "dim_Location_Password"
+    }, {
+      "id" : "_GiQu4_qpEe69Pr2slada2A",
+      "name" : "dim_Location_Port"
+    }, {
+      "id" : "_GiQu5PqpEe69Pr2slada2A",
+      "name" : "dim_Location_AdditionalParams"
+    }, {
+      "id" : "_GiQu5fqpEe69Pr2slada2A",
+      "name" : "dim_Location_Database"
+    }, {
+      "id" : "_GiQu5vqpEe69Pr2slada2A",
+      "name" : "dim_Location_Login"
+    }, {
+      "id" : "_GiQu5_qpEe69Pr2slada2A",
+      "name" : "dim_Location_Server"
+    } ]
+  } ]
+}

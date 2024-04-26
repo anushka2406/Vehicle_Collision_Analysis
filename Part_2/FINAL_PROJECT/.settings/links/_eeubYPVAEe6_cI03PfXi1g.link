@@ -1,0 +1,29 @@
+{
+  "itemId" : "_eeubYPVAEe6_cI03PfXi1g",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_C-6j8PqpEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_C_VasfqpEe69Pr2slada2A",
+      "name" : "dim_Date_Schema"
+    }, {
+      "id" : "_C_VasvqpEe69Pr2slada2A",
+      "name" : "dim_Date_Password"
+    }, {
+      "id" : "_C_Vas_qpEe69Pr2slada2A",
+      "name" : "dim_Date_Port"
+    }, {
+      "id" : "_C_VatPqpEe69Pr2slada2A",
+      "name" : "dim_Date_AdditionalParams"
+    }, {
+      "id" : "_C_VatfqpEe69Pr2slada2A",
+      "name" : "dim_Date_Database"
+    }, {
+      "id" : "_C_VatvqpEe69Pr2slada2A",
+      "name" : "dim_Date_Login"
+    }, {
+      "id" : "_C_Vat_qpEe69Pr2slada2A",
+      "name" : "dim_Date_Server"
+    } ]
+  } ]
+}

@@ -1,0 +1,504 @@
+{
+  "itemId" : "_9OfZgPoQEe69Pr2slada2A",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_ntyVEPqoEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_nuSrYfqoEe69Pr2slada2A",
+      "name" : "db_connection_Schema"
+    }, {
+      "id" : "_nuSrYvqoEe69Pr2slada2A",
+      "name" : "db_connection_Password"
+    }, {
+      "id" : "_nuSrY_qoEe69Pr2slada2A",
+      "name" : "db_connection_Port"
+    }, {
+      "id" : "_nuSrZPqoEe69Pr2slada2A",
+      "name" : "db_connection_AdditionalParams"
+    }, {
+      "id" : "_nuSrZfqoEe69Pr2slada2A",
+      "name" : "db_connection_Database"
+    }, {
+      "id" : "_nuSrZvqoEe69Pr2slada2A",
+      "name" : "db_connection_Login"
+    }, {
+      "id" : "_nuSrZ_qoEe69Pr2slada2A",
+      "name" : "db_connection_Server"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_C-6j8PqpEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_C_VatvqpEe69Pr2slada2A",
+      "name" : "dim_Date_Login"
+    }, {
+      "id" : "_C_Vas_qpEe69Pr2slada2A",
+      "name" : "dim_Date_Port"
+    }, {
+      "id" : "_C_VatPqpEe69Pr2slada2A",
+      "name" : "dim_Date_AdditionalParams"
+    }, {
+      "id" : "_C_Vat_qpEe69Pr2slada2A",
+      "name" : "dim_Date_Server"
+    }, {
+      "id" : "_C_VatfqpEe69Pr2slada2A",
+      "name" : "dim_Date_Database"
+    }, {
+      "id" : "_C_VasfqpEe69Pr2slada2A",
+      "name" : "dim_Date_Schema"
+    }, {
+      "id" : "_C_VasvqpEe69Pr2slada2A",
+      "name" : "dim_Date_Password"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_Gh-bAPqpEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_GiQu5_qpEe69Pr2slada2A",
+      "name" : "dim_Location_Server"
+    }, {
+      "id" : "_GiQu5PqpEe69Pr2slada2A",
+      "name" : "dim_Location_AdditionalParams"
+    }, {
+      "id" : "_GiQu4fqpEe69Pr2slada2A",
+      "name" : "dim_Location_Schema"
+    }, {
+      "id" : "_GiQu5fqpEe69Pr2slada2A",
+      "name" : "dim_Location_Database"
+    }, {
+      "id" : "_GiQu4vqpEe69Pr2slada2A",
+      "name" : "dim_Location_Password"
+    }, {
+      "id" : "_GiQu4_qpEe69Pr2slada2A",
+      "name" : "dim_Location_Port"
+    }, {
+      "id" : "_GiQu5vqpEe69Pr2slada2A",
+      "name" : "dim_Location_Login"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_MPTxQPqpEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_MP6ON_qpEe69Pr2slada2A",
+      "name" : "dim_Time_Server"
+    }, {
+      "id" : "_MP6ONfqpEe69Pr2slada2A",
+      "name" : "dim_Time_Database"
+    }, {
+      "id" : "_MP6OMvqpEe69Pr2slada2A",
+      "name" : "dim_Time_Password"
+    }, {
+      "id" : "_MP6OM_qpEe69Pr2slada2A",
+      "name" : "dim_Time_Port"
+    }, {
+      "id" : "_MP6OMfqpEe69Pr2slada2A",
+      "name" : "dim_Time_Schema"
+    }, {
+      "id" : "_MP6ONPqpEe69Pr2slada2A",
+      "name" : "dim_Time_AdditionalParams"
+    }, {
+      "id" : "_MP6ONvqpEe69Pr2slada2A",
+      "name" : "dim_Time_Login"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_WqCDsPqpEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_Wqrj8_qpEe69Pr2slada2A",
+      "name" : "fct_Accident_Port"
+    }, {
+      "id" : "_Wqrj9vqpEe69Pr2slada2A",
+      "name" : "fct_Accident_Login"
+    }, {
+      "id" : "_Wqrj8vqpEe69Pr2slada2A",
+      "name" : "fct_Accident_Password"
+    }, {
+      "id" : "_Wqrj9PqpEe69Pr2slada2A",
+      "name" : "fct_Accident_AdditionalParams"
+    }, {
+      "id" : "_Wqrj9fqpEe69Pr2slada2A",
+      "name" : "fct_Accident_Database"
+    }, {
+      "id" : "_Wqrj8fqpEe69Pr2slada2A",
+      "name" : "fct_Accident_Schema"
+    }, {
+      "id" : "_Wqrj9_qpEe69Pr2slada2A",
+      "name" : "fct_Accident_Server"
+    } ]
+  }, {
+    "contextName" : "prod",
+    "repoId" : "_ntyVEPqoEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_nuSrcfqoEe69Pr2slada2A",
+      "name" : "db_connection_Schema"
+    }, {
+      "id" : "_nuSrcvqoEe69Pr2slada2A",
+      "name" : "db_connection_Password"
+    }, {
+      "id" : "_nuSrc_qoEe69Pr2slada2A",
+      "name" : "db_connection_Port"
+    }, {
+      "id" : "_nuSrdPqoEe69Pr2slada2A",
+      "name" : "db_connection_AdditionalParams"
+    }, {
+      "id" : "_nuSrdfqoEe69Pr2slada2A",
+      "name" : "db_connection_Database"
+    }, {
+      "id" : "_nuSrdvqoEe69Pr2slada2A",
+      "name" : "db_connection_Login"
+    }, {
+      "id" : "_nuSrd_qoEe69Pr2slada2A",
+      "name" : "db_connection_Server"
+    } ]
+  }, {
+    "contextName" : "prod",
+    "repoId" : "_C-6j8PqpEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_C_VatvqpEe69Pr2slada2A",
+      "name" : "dim_Date_Login"
+    }, {
+      "id" : "_C_Vas_qpEe69Pr2slada2A",
+      "name" : "dim_Date_Port"
+    }, {
+      "id" : "_C_VatPqpEe69Pr2slada2A",
+      "name" : "dim_Date_AdditionalParams"
+    }, {
+      "id" : "_C_Vat_qpEe69Pr2slada2A",
+      "name" : "dim_Date_Server"
+    }, {
+      "id" : "_C_VatfqpEe69Pr2slada2A",
+      "name" : "dim_Date_Database"
+    }, {
+      "id" : "_C_VasfqpEe69Pr2slada2A",
+      "name" : "dim_Date_Schema"
+    }, {
+      "id" : "_C_VasvqpEe69Pr2slada2A",
+      "name" : "dim_Date_Password"
+    } ]
+  }, {
+    "contextName" : "prod",
+    "repoId" : "_Gh-bAPqpEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_GiQu5_qpEe69Pr2slada2A",
+      "name" : "dim_Location_Server"
+    }, {
+      "id" : "_GiQu5PqpEe69Pr2slada2A",
+      "name" : "dim_Location_AdditionalParams"
+    }, {
+      "id" : "_GiQu4fqpEe69Pr2slada2A",
+      "name" : "dim_Location_Schema"
+    }, {
+      "id" : "_GiQu5fqpEe69Pr2slada2A",
+      "name" : "dim_Location_Database"
+    }, {
+      "id" : "_GiQu4vqpEe69Pr2slada2A",
+      "name" : "dim_Location_Password"
+    }, {
+      "id" : "_GiQu4_qpEe69Pr2slada2A",
+      "name" : "dim_Location_Port"
+    }, {
+      "id" : "_GiQu5vqpEe69Pr2slada2A",
+      "name" : "dim_Location_Login"
+    } ]
+  }, {
+    "contextName" : "prod",
+    "repoId" : "_MPTxQPqpEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_MP6ON_qpEe69Pr2slada2A",
+      "name" : "dim_Time_Server"
+    }, {
+      "id" : "_MP6ONfqpEe69Pr2slada2A",
+      "name" : "dim_Time_Database"
+    }, {
+      "id" : "_MP6OMvqpEe69Pr2slada2A",
+      "name" : "dim_Time_Password"
+    }, {
+      "id" : "_MP6OM_qpEe69Pr2slada2A",
+      "name" : "dim_Time_Port"
+    }, {
+      "id" : "_MP6OMfqpEe69Pr2slada2A",
+      "name" : "dim_Time_Schema"
+    }, {
+      "id" : "_MP6ONPqpEe69Pr2slada2A",
+      "name" : "dim_Time_AdditionalParams"
+    }, {
+      "id" : "_MP6ONvqpEe69Pr2slada2A",
+      "name" : "dim_Time_Login"
+    } ]
+  }, {
+    "contextName" : "prod",
+    "repoId" : "_WqCDsPqpEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_Wqrj8_qpEe69Pr2slada2A",
+      "name" : "fct_Accident_Port"
+    }, {
+      "id" : "_Wqrj9vqpEe69Pr2slada2A",
+      "name" : "fct_Accident_Login"
+    }, {
+      "id" : "_Wqrj8vqpEe69Pr2slada2A",
+      "name" : "fct_Accident_Password"
+    }, {
+      "id" : "_Wqrj9PqpEe69Pr2slada2A",
+      "name" : "fct_Accident_AdditionalParams"
+    }, {
+      "id" : "_Wqrj9fqpEe69Pr2slada2A",
+      "name" : "fct_Accident_Database"
+    }, {
+      "id" : "_Wqrj8fqpEe69Pr2slada2A",
+      "name" : "fct_Accident_Schema"
+    }, {
+      "id" : "_Wqrj9_qpEe69Pr2slada2A",
+      "name" : "fct_Accident_Server"
+    } ]
+  }, {
+    "contextName" : "dev",
+    "repoId" : "_ntyVEPqoEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_nuSrafqoEe69Pr2slada2A",
+      "name" : "db_connection_Schema"
+    }, {
+      "id" : "_nuSravqoEe69Pr2slada2A",
+      "name" : "db_connection_Password"
+    }, {
+      "id" : "_nuSra_qoEe69Pr2slada2A",
+      "name" : "db_connection_Port"
+    }, {
+      "id" : "_nuSrbPqoEe69Pr2slada2A",
+      "name" : "db_connection_AdditionalParams"
+    }, {
+      "id" : "_nuSrbfqoEe69Pr2slada2A",
+      "name" : "db_connection_Database"
+    }, {
+      "id" : "_nuSrbvqoEe69Pr2slada2A",
+      "name" : "db_connection_Login"
+    }, {
+      "id" : "_nuSrb_qoEe69Pr2slada2A",
+      "name" : "db_connection_Server"
+    } ]
+  }, {
+    "contextName" : "dev",
+    "repoId" : "_C-6j8PqpEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_C_VatvqpEe69Pr2slada2A",
+      "name" : "dim_Date_Login"
+    }, {
+      "id" : "_C_Vas_qpEe69Pr2slada2A",
+      "name" : "dim_Date_Port"
+    }, {
+      "id" : "_C_VatPqpEe69Pr2slada2A",
+      "name" : "dim_Date_AdditionalParams"
+    }, {
+      "id" : "_C_Vat_qpEe69Pr2slada2A",
+      "name" : "dim_Date_Server"
+    }, {
+      "id" : "_C_VatfqpEe69Pr2slada2A",
+      "name" : "dim_Date_Database"
+    }, {
+      "id" : "_C_VasfqpEe69Pr2slada2A",
+      "name" : "dim_Date_Schema"
+    }, {
+      "id" : "_C_VasvqpEe69Pr2slada2A",
+      "name" : "dim_Date_Password"
+    } ]
+  }, {
+    "contextName" : "dev",
+    "repoId" : "_Gh-bAPqpEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_GiQu5_qpEe69Pr2slada2A",
+      "name" : "dim_Location_Server"
+    }, {
+      "id" : "_GiQu5PqpEe69Pr2slada2A",
+      "name" : "dim_Location_AdditionalParams"
+    }, {
+      "id" : "_GiQu4fqpEe69Pr2slada2A",
+      "name" : "dim_Location_Schema"
+    }, {
+      "id" : "_GiQu5fqpEe69Pr2slada2A",
+      "name" : "dim_Location_Database"
+    }, {
+      "id" : "_GiQu4vqpEe69Pr2slada2A",
+      "name" : "dim_Location_Password"
+    }, {
+      "id" : "_GiQu4_qpEe69Pr2slada2A",
+      "name" : "dim_Location_Port"
+    }, {
+      "id" : "_GiQu5vqpEe69Pr2slada2A",
+      "name" : "dim_Location_Login"
+    } ]
+  }, {
+    "contextName" : "dev",
+    "repoId" : "_MPTxQPqpEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_MP6ON_qpEe69Pr2slada2A",
+      "name" : "dim_Time_Server"
+    }, {
+      "id" : "_MP6ONfqpEe69Pr2slada2A",
+      "name" : "dim_Time_Database"
+    }, {
+      "id" : "_MP6OMvqpEe69Pr2slada2A",
+      "name" : "dim_Time_Password"
+    }, {
+      "id" : "_MP6OM_qpEe69Pr2slada2A",
+      "name" : "dim_Time_Port"
+    }, {
+      "id" : "_MP6OMfqpEe69Pr2slada2A",
+      "name" : "dim_Time_Schema"
+    }, {
+      "id" : "_MP6ONPqpEe69Pr2slada2A",
+      "name" : "dim_Time_AdditionalParams"
+    }, {
+      "id" : "_MP6ONvqpEe69Pr2slada2A",
+      "name" : "dim_Time_Login"
+    } ]
+  }, {
+    "contextName" : "dev",
+    "repoId" : "_WqCDsPqpEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_Wqrj8_qpEe69Pr2slada2A",
+      "name" : "fct_Accident_Port"
+    }, {
+      "id" : "_Wqrj9vqpEe69Pr2slada2A",
+      "name" : "fct_Accident_Login"
+    }, {
+      "id" : "_Wqrj8vqpEe69Pr2slada2A",
+      "name" : "fct_Accident_Password"
+    }, {
+      "id" : "_Wqrj9PqpEe69Pr2slada2A",
+      "name" : "fct_Accident_AdditionalParams"
+    }, {
+      "id" : "_Wqrj9fqpEe69Pr2slada2A",
+      "name" : "fct_Accident_Database"
+    }, {
+      "id" : "_Wqrj8fqpEe69Pr2slada2A",
+      "name" : "fct_Accident_Schema"
+    }, {
+      "id" : "_Wqrj9_qpEe69Pr2slada2A",
+      "name" : "fct_Accident_Server"
+    } ]
+  }, {
+    "contextName" : "test",
+    "repoId" : "_ntyVEPqoEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_nuSrefqoEe69Pr2slada2A",
+      "name" : "db_connection_Schema"
+    }, {
+      "id" : "_nuSrevqoEe69Pr2slada2A",
+      "name" : "db_connection_Password"
+    }, {
+      "id" : "_nuSre_qoEe69Pr2slada2A",
+      "name" : "db_connection_Port"
+    }, {
+      "id" : "_nuSrfPqoEe69Pr2slada2A",
+      "name" : "db_connection_AdditionalParams"
+    }, {
+      "id" : "_nuSrffqoEe69Pr2slada2A",
+      "name" : "db_connection_Database"
+    }, {
+      "id" : "_nuSrfvqoEe69Pr2slada2A",
+      "name" : "db_connection_Login"
+    }, {
+      "id" : "_nuSrf_qoEe69Pr2slada2A",
+      "name" : "db_connection_Server"
+    } ]
+  }, {
+    "contextName" : "test",
+    "repoId" : "_C-6j8PqpEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_C_VatvqpEe69Pr2slada2A",
+      "name" : "dim_Date_Login"
+    }, {
+      "id" : "_C_Vas_qpEe69Pr2slada2A",
+      "name" : "dim_Date_Port"
+    }, {
+      "id" : "_C_VatPqpEe69Pr2slada2A",
+      "name" : "dim_Date_AdditionalParams"
+    }, {
+      "id" : "_C_Vat_qpEe69Pr2slada2A",
+      "name" : "dim_Date_Server"
+    }, {
+      "id" : "_C_VatfqpEe69Pr2slada2A",
+      "name" : "dim_Date_Database"
+    }, {
+      "id" : "_C_VasfqpEe69Pr2slada2A",
+      "name" : "dim_Date_Schema"
+    }, {
+      "id" : "_C_VasvqpEe69Pr2slada2A",
+      "name" : "dim_Date_Password"
+    } ]
+  }, {
+    "contextName" : "test",
+    "repoId" : "_Gh-bAPqpEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_GiQu5_qpEe69Pr2slada2A",
+      "name" : "dim_Location_Server"
+    }, {
+      "id" : "_GiQu5PqpEe69Pr2slada2A",
+      "name" : "dim_Location_AdditionalParams"
+    }, {
+      "id" : "_GiQu4fqpEe69Pr2slada2A",
+      "name" : "dim_Location_Schema"
+    }, {
+      "id" : "_GiQu5fqpEe69Pr2slada2A",
+      "name" : "dim_Location_Database"
+    }, {
+      "id" : "_GiQu4vqpEe69Pr2slada2A",
+      "name" : "dim_Location_Password"
+    }, {
+      "id" : "_GiQu4_qpEe69Pr2slada2A",
+      "name" : "dim_Location_Port"
+    }, {
+      "id" : "_GiQu5vqpEe69Pr2slada2A",
+      "name" : "dim_Location_Login"
+    } ]
+  }, {
+    "contextName" : "test",
+    "repoId" : "_MPTxQPqpEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_MP6ON_qpEe69Pr2slada2A",
+      "name" : "dim_Time_Server"
+    }, {
+      "id" : "_MP6ONfqpEe69Pr2slada2A",
+      "name" : "dim_Time_Database"
+    }, {
+      "id" : "_MP6OMvqpEe69Pr2slada2A",
+      "name" : "dim_Time_Password"
+    }, {
+      "id" : "_MP6OM_qpEe69Pr2slada2A",
+      "name" : "dim_Time_Port"
+    }, {
+      "id" : "_MP6OMfqpEe69Pr2slada2A",
+      "name" : "dim_Time_Schema"
+    }, {
+      "id" : "_MP6ONPqpEe69Pr2slada2A",
+      "name" : "dim_Time_AdditionalParams"
+    }, {
+      "id" : "_MP6ONvqpEe69Pr2slada2A",
+      "name" : "dim_Time_Login"
+    } ]
+  }, {
+    "contextName" : "test",
+    "repoId" : "_WqCDsPqpEe69Pr2slada2A",
+    "parameterList" : [ {
+      "id" : "_Wqrj8_qpEe69Pr2slada2A",
+      "name" : "fct_Accident_Port"
+    }, {
+      "id" : "_Wqrj9vqpEe69Pr2slada2A",
+      "name" : "fct_Accident_Login"
+    }, {
+      "id" : "_Wqrj8vqpEe69Pr2slada2A",
+      "name" : "fct_Accident_Password"
+    }, {
+      "id" : "_Wqrj9PqpEe69Pr2slada2A",
+      "name" : "fct_Accident_AdditionalParams"
+    }, {
+      "id" : "_Wqrj9fqpEe69Pr2slada2A",
+      "name" : "fct_Accident_Database"
+    }, {
+      "id" : "_Wqrj8fqpEe69Pr2slada2A",
+      "name" : "fct_Accident_Schema"
+    }, {
+      "id" : "_Wqrj9_qpEe69Pr2slada2A",
+      "name" : "fct_Accident_Server"
+    } ]
+  } ]
+}

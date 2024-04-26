@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" internalId="_tjm48PqoEe69Pr2slada2A" name="db_connection_Schema" prompt="db_connection_Schema?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_tjm48fqoEe69Pr2slada2A" name="db_connection_Password" prompt="db_connection_Password?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_Password" value="enc:system.encryption.key.v1:MmPN4tKDuEWsBWzEu2/+kHslOqBltckqNXS0pgH4W4uOykIrZQ=="/>
+    <contextParameter comment="" internalId="_tjm48vqoEe69Pr2slada2A" name="db_connection_Port" prompt="db_connection_Port?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_tjm48_qoEe69Pr2slada2A" name="db_connection_AdditionalParams" prompt="db_connection_AdditionalParams?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_tjm49PqoEe69Pr2slada2A" name="db_connection_Database" prompt="db_connection_Database?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value="final_project"/>
+    <contextParameter comment="" internalId="_tjm49fqoEe69Pr2slada2A" name="db_connection_Login" prompt="db_connection_Login?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value="damg7370_demo"/>
+    <contextParameter comment="" internalId="_tjm49vqoEe69Pr2slada2A" name="db_connection_Server" prompt="db_connection_Server?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value="DHIR"/>
+    <contextParameter comment="" internalId="_Ehyr8PqpEe69Pr2slada2A" name="dim_Date_Login" prompt="dim_Date_Login?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value="damg7370_demo"/>
+    <contextParameter comment="" internalId="_Ehyr8fqpEe69Pr2slada2A" name="dim_Date_Port" prompt="dim_Date_Port?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_Ehyr8vqpEe69Pr2slada2A" name="dim_Date_AdditionalParams" prompt="dim_Date_AdditionalParams?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Ehyr8_qpEe69Pr2slada2A" name="dim_Date_Server" prompt="dim_Date_Server?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value="DHIR"/>
+    <contextParameter comment="" internalId="_Ehyr9PqpEe69Pr2slada2A" name="dim_Date_Database" prompt="dim_Date_Database?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value="final_project"/>
+    <contextParameter comment="" internalId="_Ehyr9fqpEe69Pr2slada2A" name="dim_Date_Schema" prompt="dim_Date_Schema?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_Ehyr9vqpEe69Pr2slada2A" name="dim_Date_Password" prompt="dim_Date_Password?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_Password" value="enc:system.encryption.key.v1:eRuCqIF+tA6H5yy7yOM6ucU6/zW99MBiopYatYd2iF7eJRD3ew=="/>
+    <contextParameter comment="" internalId="_IHMsYPqpEe69Pr2slada2A" name="dim_Location_Server" prompt="dim_Location_Server?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value="DHIR"/>
+    <contextParameter comment="" internalId="_IHMsYfqpEe69Pr2slada2A" name="dim_Location_AdditionalParams" prompt="dim_Location_AdditionalParams?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_IHMsYvqpEe69Pr2slada2A" name="dim_Location_Schema" prompt="dim_Location_Schema?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_IHMsY_qpEe69Pr2slada2A" name="dim_Location_Database" prompt="dim_Location_Database?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value="final_project"/>
+    <contextParameter comment="" internalId="_IHMsZPqpEe69Pr2slada2A" name="dim_Location_Password" prompt="dim_Location_Password?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_Password" value="enc:system.encryption.key.v1:/BOuXht+s1Sah8oDuSQfc3sbtI0L9LYL8gKUo8bT5If18wtdzw=="/>
+    <contextParameter comment="" internalId="_IHMsZfqpEe69Pr2slada2A" name="dim_Location_Port" prompt="dim_Location_Port?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_IHMsZvqpEe69Pr2slada2A" name="dim_Location_Login" prompt="dim_Location_Login?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value="damg7370_demo"/>
+    <contextParameter comment="" internalId="_OHVC0PqpEe69Pr2slada2A" name="dim_Time_Server" prompt="dim_Time_Server?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value="DHIR"/>
+    <contextParameter comment="" internalId="_OHVC0fqpEe69Pr2slada2A" name="dim_Time_Database" prompt="dim_Time_Database?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value="final_project"/>
+    <contextParameter comment="" internalId="_OHVC0vqpEe69Pr2slada2A" name="dim_Time_Password" prompt="dim_Time_Password?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_Password" value="enc:system.encryption.key.v1:k93AFoHpgM3UhGvKq97hdRzz31DABol9G8NKsctP6HHBSAh6fA=="/>
+    <contextParameter comment="" internalId="_OHVC0_qpEe69Pr2slada2A" name="dim_Time_Port" prompt="dim_Time_Port?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_OHVC1PqpEe69Pr2slada2A" name="dim_Time_Schema" prompt="dim_Time_Schema?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_OHVC1fqpEe69Pr2slada2A" name="dim_Time_AdditionalParams" prompt="dim_Time_AdditionalParams?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_OHVC1vqpEe69Pr2slada2A" name="dim_Time_Login" prompt="dim_Time_Login?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value="damg7370_demo"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="dev">
+    <contextParameter comment="" internalId="_tjm48PqoEe69Pr2slada2A" name="db_connection_Schema" prompt="db_connection_Schema?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_tjm48fqoEe69Pr2slada2A" name="db_connection_Password" prompt="db_connection_Password?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_Password" value="enc:system.encryption.key.v1:MmPN4tKDuEWsBWzEu2/+kHslOqBltckqNXS0pgH4W4uOykIrZQ=="/>
+    <contextParameter comment="" internalId="_tjm48vqoEe69Pr2slada2A" name="db_connection_Port" prompt="db_connection_Port?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_tjm48_qoEe69Pr2slada2A" name="db_connection_AdditionalParams" prompt="db_connection_AdditionalParams?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_tjm49PqoEe69Pr2slada2A" name="db_connection_Database" prompt="db_connection_Database?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value="final_project"/>
+    <contextParameter comment="" internalId="_tjm49fqoEe69Pr2slada2A" name="db_connection_Login" prompt="db_connection_Login?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value="damg7370_demo"/>
+    <contextParameter comment="" internalId="_tjm49vqoEe69Pr2slada2A" name="db_connection_Server" prompt="db_connection_Server?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value="DHIR"/>
+    <contextParameter comment="" internalId="_Ehyr8PqpEe69Pr2slada2A" name="dim_Date_Login" prompt="dim_Date_Login?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value="damg7370_demo"/>
+    <contextParameter comment="" internalId="_Ehyr8fqpEe69Pr2slada2A" name="dim_Date_Port" prompt="dim_Date_Port?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_Ehyr8vqpEe69Pr2slada2A" name="dim_Date_AdditionalParams" prompt="dim_Date_AdditionalParams?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Ehyr8_qpEe69Pr2slada2A" name="dim_Date_Server" prompt="dim_Date_Server?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value="DHIR"/>
+    <contextParameter comment="" internalId="_Ehyr9PqpEe69Pr2slada2A" name="dim_Date_Database" prompt="dim_Date_Database?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value="final_project"/>
+    <contextParameter comment="" internalId="_Ehyr9fqpEe69Pr2slada2A" name="dim_Date_Schema" prompt="dim_Date_Schema?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_Ehyr9vqpEe69Pr2slada2A" name="dim_Date_Password" prompt="dim_Date_Password?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_Password" value="enc:system.encryption.key.v1:eRuCqIF+tA6H5yy7yOM6ucU6/zW99MBiopYatYd2iF7eJRD3ew=="/>
+    <contextParameter comment="" internalId="_IHMsYPqpEe69Pr2slada2A" name="dim_Location_Server" prompt="dim_Location_Server?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value="DHIR"/>
+    <contextParameter comment="" internalId="_IHMsYfqpEe69Pr2slada2A" name="dim_Location_AdditionalParams" prompt="dim_Location_AdditionalParams?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_IHMsYvqpEe69Pr2slada2A" name="dim_Location_Schema" prompt="dim_Location_Schema?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_IHMsY_qpEe69Pr2slada2A" name="dim_Location_Database" prompt="dim_Location_Database?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value="final_project"/>
+    <contextParameter comment="" internalId="_IHMsZPqpEe69Pr2slada2A" name="dim_Location_Password" prompt="dim_Location_Password?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_Password" value="enc:system.encryption.key.v1:/BOuXht+s1Sah8oDuSQfc3sbtI0L9LYL8gKUo8bT5If18wtdzw=="/>
+    <contextParameter comment="" internalId="_IHMsZfqpEe69Pr2slada2A" name="dim_Location_Port" prompt="dim_Location_Port?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_IHMsZvqpEe69Pr2slada2A" name="dim_Location_Login" prompt="dim_Location_Login?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value="damg7370_demo"/>
+    <contextParameter comment="" internalId="_OHVC0PqpEe69Pr2slada2A" name="dim_Time_Server" prompt="dim_Time_Server?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value="DHIR"/>
+    <contextParameter comment="" internalId="_OHVC0fqpEe69Pr2slada2A" name="dim_Time_Database" prompt="dim_Time_Database?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value="final_project"/>
+    <contextParameter comment="" internalId="_OHVC0vqpEe69Pr2slada2A" name="dim_Time_Password" prompt="dim_Time_Password?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_Password" value="enc:system.encryption.key.v1:k93AFoHpgM3UhGvKq97hdRzz31DABol9G8NKsctP6HHBSAh6fA=="/>
+    <contextParameter comment="" internalId="_OHVC0_qpEe69Pr2slada2A" name="dim_Time_Port" prompt="dim_Time_Port?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_OHVC1PqpEe69Pr2slada2A" name="dim_Time_Schema" prompt="dim_Time_Schema?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_OHVC1fqpEe69Pr2slada2A" name="dim_Time_AdditionalParams" prompt="dim_Time_AdditionalParams?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_OHVC1vqpEe69Pr2slada2A" name="dim_Time_Login" prompt="dim_Time_Login?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value="damg7370_demo"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="prod">
+    <contextParameter comment="" internalId="_tjm48PqoEe69Pr2slada2A" name="db_connection_Schema" prompt="db_connection_Schema?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_tjm48fqoEe69Pr2slada2A" name="db_connection_Password" prompt="db_connection_Password?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_Password" value="enc:system.encryption.key.v1:MmPN4tKDuEWsBWzEu2/+kHslOqBltckqNXS0pgH4W4uOykIrZQ=="/>
+    <contextParameter comment="" internalId="_tjm48vqoEe69Pr2slada2A" name="db_connection_Port" prompt="db_connection_Port?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_tjm48_qoEe69Pr2slada2A" name="db_connection_AdditionalParams" prompt="db_connection_AdditionalParams?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_tjm49PqoEe69Pr2slada2A" name="db_connection_Database" prompt="db_connection_Database?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value="final_project"/>
+    <contextParameter comment="" internalId="_tjm49fqoEe69Pr2slada2A" name="db_connection_Login" prompt="db_connection_Login?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value="damg7370_demo"/>
+    <contextParameter comment="" internalId="_tjm49vqoEe69Pr2slada2A" name="db_connection_Server" prompt="db_connection_Server?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value="DHIR"/>
+    <contextParameter comment="" internalId="_Ehyr8PqpEe69Pr2slada2A" name="dim_Date_Login" prompt="dim_Date_Login?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value="damg7370_demo"/>
+    <contextParameter comment="" internalId="_Ehyr8fqpEe69Pr2slada2A" name="dim_Date_Port" prompt="dim_Date_Port?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_Ehyr8vqpEe69Pr2slada2A" name="dim_Date_AdditionalParams" prompt="dim_Date_AdditionalParams?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Ehyr8_qpEe69Pr2slada2A" name="dim_Date_Server" prompt="dim_Date_Server?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value="DHIR"/>
+    <contextParameter comment="" internalId="_Ehyr9PqpEe69Pr2slada2A" name="dim_Date_Database" prompt="dim_Date_Database?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value="final_project"/>
+    <contextParameter comment="" internalId="_Ehyr9fqpEe69Pr2slada2A" name="dim_Date_Schema" prompt="dim_Date_Schema?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_Ehyr9vqpEe69Pr2slada2A" name="dim_Date_Password" prompt="dim_Date_Password?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_Password" value="enc:system.encryption.key.v1:eRuCqIF+tA6H5yy7yOM6ucU6/zW99MBiopYatYd2iF7eJRD3ew=="/>
+    <contextParameter comment="" internalId="_IHMsYPqpEe69Pr2slada2A" name="dim_Location_Server" prompt="dim_Location_Server?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value="DHIR"/>
+    <contextParameter comment="" internalId="_IHMsYfqpEe69Pr2slada2A" name="dim_Location_AdditionalParams" prompt="dim_Location_AdditionalParams?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_IHMsYvqpEe69Pr2slada2A" name="dim_Location_Schema" prompt="dim_Location_Schema?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_IHMsY_qpEe69Pr2slada2A" name="dim_Location_Database" prompt="dim_Location_Database?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value="final_project"/>
+    <contextParameter comment="" internalId="_IHMsZPqpEe69Pr2slada2A" name="dim_Location_Password" prompt="dim_Location_Password?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_Password" value="enc:system.encryption.key.v1:/BOuXht+s1Sah8oDuSQfc3sbtI0L9LYL8gKUo8bT5If18wtdzw=="/>
+    <contextParameter comment="" internalId="_IHMsZfqpEe69Pr2slada2A" name="dim_Location_Port" prompt="dim_Location_Port?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_IHMsZvqpEe69Pr2slada2A" name="dim_Location_Login" prompt="dim_Location_Login?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value="damg7370_demo"/>
+    <contextParameter comment="" internalId="_OHVC0PqpEe69Pr2slada2A" name="dim_Time_Server" prompt="dim_Time_Server?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value="DHIR"/>
+    <contextParameter comment="" internalId="_OHVC0fqpEe69Pr2slada2A" name="dim_Time_Database" prompt="dim_Time_Database?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value="final_project"/>
+    <contextParameter comment="" internalId="_OHVC0vqpEe69Pr2slada2A" name="dim_Time_Password" prompt="dim_Time_Password?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_Password" value="enc:system.encryption.key.v1:k93AFoHpgM3UhGvKq97hdRzz31DABol9G8NKsctP6HHBSAh6fA=="/>
+    <contextParameter comment="" internalId="_OHVC0_qpEe69Pr2slada2A" name="dim_Time_Port" prompt="dim_Time_Port?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_OHVC1PqpEe69Pr2slada2A" name="dim_Time_Schema" prompt="dim_Time_Schema?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_OHVC1fqpEe69Pr2slada2A" name="dim_Time_AdditionalParams" prompt="dim_Time_AdditionalParams?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_OHVC1vqpEe69Pr2slada2A" name="dim_Time_Login" prompt="dim_Time_Login?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value="damg7370_demo"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="test">
+    <contextParameter comment="" internalId="_tjm48PqoEe69Pr2slada2A" name="db_connection_Schema" prompt="db_connection_Schema?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_tjm48fqoEe69Pr2slada2A" name="db_connection_Password" prompt="db_connection_Password?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_Password" value="enc:system.encryption.key.v1:MmPN4tKDuEWsBWzEu2/+kHslOqBltckqNXS0pgH4W4uOykIrZQ=="/>
+    <contextParameter comment="" internalId="_tjm48vqoEe69Pr2slada2A" name="db_connection_Port" prompt="db_connection_Port?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_tjm48_qoEe69Pr2slada2A" name="db_connection_AdditionalParams" prompt="db_connection_AdditionalParams?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_tjm49PqoEe69Pr2slada2A" name="db_connection_Database" prompt="db_connection_Database?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value="final_project"/>
+    <contextParameter comment="" internalId="_tjm49fqoEe69Pr2slada2A" name="db_connection_Login" prompt="db_connection_Login?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value="damg7370_demo"/>
+    <contextParameter comment="" internalId="_tjm49vqoEe69Pr2slada2A" name="db_connection_Server" prompt="db_connection_Server?" promptNeeded="false" repositoryContextId="_ntyVEPqoEe69Pr2slada2A" type="id_String" value="DHIR"/>
+    <contextParameter comment="" internalId="_Ehyr8PqpEe69Pr2slada2A" name="dim_Date_Login" prompt="dim_Date_Login?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value="damg7370_demo"/>
+    <contextParameter comment="" internalId="_Ehyr8fqpEe69Pr2slada2A" name="dim_Date_Port" prompt="dim_Date_Port?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_Ehyr8vqpEe69Pr2slada2A" name="dim_Date_AdditionalParams" prompt="dim_Date_AdditionalParams?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Ehyr8_qpEe69Pr2slada2A" name="dim_Date_Server" prompt="dim_Date_Server?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value="DHIR"/>
+    <contextParameter comment="" internalId="_Ehyr9PqpEe69Pr2slada2A" name="dim_Date_Database" prompt="dim_Date_Database?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value="final_project"/>
+    <contextParameter comment="" internalId="_Ehyr9fqpEe69Pr2slada2A" name="dim_Date_Schema" prompt="dim_Date_Schema?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_Ehyr9vqpEe69Pr2slada2A" name="dim_Date_Password" prompt="dim_Date_Password?" promptNeeded="false" repositoryContextId="_C-6j8PqpEe69Pr2slada2A" type="id_Password" value="enc:system.encryption.key.v1:eRuCqIF+tA6H5yy7yOM6ucU6/zW99MBiopYatYd2iF7eJRD3ew=="/>
+    <contextParameter comment="" internalId="_IHMsYPqpEe69Pr2slada2A" name="dim_Location_Server" prompt="dim_Location_Server?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value="DHIR"/>
+    <contextParameter comment="" internalId="_IHMsYfqpEe69Pr2slada2A" name="dim_Location_AdditionalParams" prompt="dim_Location_AdditionalParams?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_IHMsYvqpEe69Pr2slada2A" name="dim_Location_Schema" prompt="dim_Location_Schema?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_IHMsY_qpEe69Pr2slada2A" name="dim_Location_Database" prompt="dim_Location_Database?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value="final_project"/>
+    <contextParameter comment="" internalId="_IHMsZPqpEe69Pr2slada2A" name="dim_Location_Password" prompt="dim_Location_Password?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_Password" value="enc:system.encryption.key.v1:/BOuXht+s1Sah8oDuSQfc3sbtI0L9LYL8gKUo8bT5If18wtdzw=="/>
+    <contextParameter comment="" internalId="_IHMsZfqpEe69Pr2slada2A" name="dim_Location_Port" prompt="dim_Location_Port?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_IHMsZvqpEe69Pr2slada2A" name="dim_Location_Login" prompt="dim_Location_Login?" promptNeeded="false" repositoryContextId="_Gh-bAPqpEe69Pr2slada2A" type="id_String" value="damg7370_demo"/>
+    <contextParameter comment="" internalId="_OHVC0PqpEe69Pr2slada2A" name="dim_Time_Server" prompt="dim_Time_Server?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value="DHIR"/>
+    <contextParameter comment="" internalId="_OHVC0fqpEe69Pr2slada2A" name="dim_Time_Database" prompt="dim_Time_Database?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value="final_project"/>
+    <contextParameter comment="" internalId="_OHVC0vqpEe69Pr2slada2A" name="dim_Time_Password" prompt="dim_Time_Password?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_Password" value="enc:system.encryption.key.v1:k93AFoHpgM3UhGvKq97hdRzz31DABol9G8NKsctP6HHBSAh6fA=="/>
+    <contextParameter comment="" internalId="_OHVC0_qpEe69Pr2slada2A" name="dim_Time_Port" prompt="dim_Time_Port?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_OHVC1PqpEe69Pr2slada2A" name="dim_Time_Schema" prompt="dim_Time_Schema?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_OHVC1fqpEe69Pr2slada2A" name="dim_Time_AdditionalParams" prompt="dim_Time_AdditionalParams?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_OHVC1vqpEe69Pr2slada2A" name="dim_Time_Login" prompt="dim_Time_Login?" promptNeeded="false" repositoryContextId="_MPTxQPqpEe69Pr2slada2A" type="id_String" value="damg7370_demo"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="192"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:6E4WXXkmp7uNHew/HHX7Z/vGutTGj6wfEpsmAfPc"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/dhirt/Documents/NEU/Sem 2/DADABI/Talend/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:2wG6zCvz4Su4DAUQ7ckUnzbDg2Gqg5ofmFtwfBPs"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_rUpakO4REe6LXupSTK5xZA" name="DataOperation"/>
+    <routinesParameter id="_rU1n0O4REe6LXupSTK5xZA" name="Mathematical"/>
+    <routinesParameter id="_rVOpYO4REe6LXupSTK5xZA" name="Numeric"/>
+    <routinesParameter id="_rVbdsO4REe6LXupSTK5xZA" name="Relational"/>
+    <routinesParameter id="_rR0wEO4REe6LXupSTK5xZA" name="SQLike"/>
+    <routinesParameter id="_rVrVUO4REe6LXupSTK5xZA" name="StringHandling"/>
+    <routinesParameter id="_rV4JoO4REe6LXupSTK5xZA" name="TalendDataGenerator"/>
+    <routinesParameter id="_rWEW4O4REe6LXupSTK5xZA" name="TalendDate"/>
+    <routinesParameter id="_rWX44O4REe6LXupSTK5xZA" name="TalendStringUtil"/>
+    <routinesParameter id="_rWMSsO4REe6LXupSTK5xZA" name="TalendString"/>
+  </parameters>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-128" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_sZXqIO4VEe6LXupSTK5xZA"/>
+    <elementParameter field="TEXT" name="HOST" value="context.db_connection_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.db_connection_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.db_connection_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.db_connection_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.db_connection_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:RXNLGdr5lHxSe9C1J0K/XsaKKadVSBbsPGQ22R2OpTjadGq2mveMjKBY8iMyxTTK9/7mb15f2JNn8g=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;chicago_part4&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from chicago_part4&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.db_connection_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="crash_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CRASH_RECORD_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CRASH_DATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CRASH_TIME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="crash_hour"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WEATHER_CONDITION"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIGHTING_CONDITION"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRIM_CONTRIBUTORY_CAUSE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEC_CONTRIBUTORY_CAUSE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STREET_NAME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MOST_SEVERE_INJURY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INJURIES_TOTAL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INJURIES_FATAL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INJURIES_INCAPACITATING"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INJURIES_NON_INCAPACITATING"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INJURIES_REPORTED_NOT_EVIDENT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INJURIES_NO_INDICATION"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INJURIES_UNKNOWN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LATITUDE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LONGITUDE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONTRIBUTING_FACTOR_COMBINED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Description"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="vehicle_type_code_combined"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="vehicle_type_code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="db_connection"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" defaultValue="" key="false" length="10" name="crash_id" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="CRASH_RECORD_ID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="City" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="CRASH_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CRASH_TIME" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="crash_hour" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="WEATHER_CONDITION" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="LIGHTING_CONDITION" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="PRIM_CONTRIBUTORY_CAUSE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SEC_CONTRIBUTORY_CAUSE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="STREET_NAME" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MOST_SEVERE_INJURY" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_TOTAL" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_FATAL" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_INCAPACITATING" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_NON_INCAPACITATING" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_REPORTED_NOT_EVIDENT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_NO_INDICATION" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_UNKNOWN" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="LATITUDE" nullable="true" originalLength="20" pattern="" precision="10" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="LONGITUDE" nullable="true" originalLength="20" pattern="" precision="10" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="CONTRIBUTING_FACTOR_COMBINED" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Code" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Description" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="vehicle_type_code_combined" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="vehicle_type_code" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="0" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tUniqRow_1"/>
+    <elementParameter field="TABLE" name="UNIQUE_KEY">
+      <elementValue elementRef="SCHEMA_COLUMN" value="crash_id"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CRASH_RECORD_ID"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CRASH_DATE"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CRASH_TIME"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="crash_hour"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WEATHER_CONDITION"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIGHTING_CONDITION"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRIM_CONTRIBUTORY_CAUSE"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEC_CONTRIBUTORY_CAUSE"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STREET_NAME"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MOST_SEVERE_INJURY"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INJURIES_TOTAL"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INJURIES_FATAL"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INJURIES_INCAPACITATING"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INJURIES_NON_INCAPACITATING"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INJURIES_REPORTED_NOT_EVIDENT"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INJURIES_NO_INDICATION"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INJURIES_UNKNOWN"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LATITUDE"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LONGITUDE"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONTRIBUTING_FACTOR_COMBINED"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Description"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="vehicle_type_code_combined"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="vehicle_type_code"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ONLY_ONCE_EACH_DUPLICATED_KEY" value="false"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
+    <elementParameter field="OPENED_LIST" name="BUFFER_SIZE" show="false" value="M"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIRECTORY" show="false" value=""/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tUniqRow_1">
+      <column comment="" defaultValue="" key="false" length="10" name="crash_id" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="CRASH_RECORD_ID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="City" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="CRASH_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CRASH_TIME" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="crash_hour" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="WEATHER_CONDITION" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="LIGHTING_CONDITION" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="PRIM_CONTRIBUTORY_CAUSE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SEC_CONTRIBUTORY_CAUSE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="STREET_NAME" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MOST_SEVERE_INJURY" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_TOTAL" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_FATAL" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_INCAPACITATING" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_NON_INCAPACITATING" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_REPORTED_NOT_EVIDENT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_NO_INDICATION" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_UNKNOWN" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="LATITUDE" nullable="true" originalLength="20" pattern="" precision="10" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="LONGITUDE" nullable="true" originalLength="20" pattern="" precision="10" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="CONTRIBUTING_FACTOR_COMBINED" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Code" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Description" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="vehicle_type_code_combined" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="vehicle_type_code" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="UNIQUE" name="UNIQUE">
+      <column comment="" defaultValue="" key="false" length="10" name="crash_id" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="CRASH_RECORD_ID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="City" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="CRASH_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CRASH_TIME" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="crash_hour" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="WEATHER_CONDITION" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="LIGHTING_CONDITION" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="PRIM_CONTRIBUTORY_CAUSE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SEC_CONTRIBUTORY_CAUSE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="STREET_NAME" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MOST_SEVERE_INJURY" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_TOTAL" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_FATAL" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_INCAPACITATING" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_NON_INCAPACITATING" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_REPORTED_NOT_EVIDENT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_NO_INDICATION" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_UNKNOWN" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="LATITUDE" nullable="true" originalLength="20" pattern="" precision="10" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="LONGITUDE" nullable="true" originalLength="20" pattern="" precision="10" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="CONTRIBUTING_FACTOR_COMBINED" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Code" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Description" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="vehicle_type_code_combined" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="vehicle_type_code" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="DUPLICATE" name="DUPLICATE">
+      <column comment="" defaultValue="" key="false" length="10" name="crash_id" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="CRASH_RECORD_ID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="City" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="CRASH_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CRASH_TIME" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="crash_hour" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="WEATHER_CONDITION" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="LIGHTING_CONDITION" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="PRIM_CONTRIBUTORY_CAUSE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SEC_CONTRIBUTORY_CAUSE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="STREET_NAME" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MOST_SEVERE_INJURY" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_TOTAL" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_FATAL" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_INCAPACITATING" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_NON_INCAPACITATING" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_REPORTED_NOT_EVIDENT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_NO_INDICATION" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INJURIES_UNKNOWN" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="LATITUDE" nullable="true" originalLength="20" pattern="" precision="10" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="LONGITUDE" nullable="true" originalLength="20" pattern="" precision="10" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="CONTRIBUTING_FACTOR_COMBINED" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Code" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="Description" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="vehicle_type_code_combined" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="vehicle_type_code" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_eeubYPVAEe6_cI03PfXi1g"/>
+    <elementParameter field="TEXT" name="HOST" value="context.dim_Date_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.dim_Date_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.dim_Date_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.dim_Date_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.dim_Date_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:EgAHyKOQguSjU5ydHChkdV26JbApd+TU0B6JKrqhnhTfl7It6NTt/mf7uBf6ua49gPlEz4s="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dim_Date&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;Select * from dim_Date&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.dim_Date_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_SK"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Day_of_Week"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Month"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Year"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Season"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DI_ProcessID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DI_CreationDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DI_WorkflowFileName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="dim_Date"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_2">
+      <column comment="" defaultValue="" key="false" length="10" name="Date_SK" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="Date" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Day_of_Week" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Month" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Year" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Season" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DI_ProcessID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="23" name="DI_CreationDate" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="DI_WorkflowFileName" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="48" offsetLabelY="0" posX="96" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_3"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_jnmZsPVAEe6_cI03PfXi1g"/>
+    <elementParameter field="TEXT" name="HOST" value="context.dim_Time_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.dim_Time_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.dim_Time_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.dim_Time_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.dim_Time_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ryLRPp2XK1O2KI2gfntfeGDOmCSsQrDmTMIOaF84oYXq3WUMQsWb35scpUzWAdzeIgI59DA="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dim_Time&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;Select * from dim_Time&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.dim_Time_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Time_SK"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Hour_24"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Time_Period"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DI_Create_Date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DI_WorkflowFileName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProcessID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="dim_Time"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_3">
+      <column comment="" defaultValue="" key="false" length="10" name="Time_SK" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Hour_24" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Time_Period" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DI_Create_Date" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="DI_WorkflowFileName" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="ProcessID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="192" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_JVB00PhhEe6Cm54yDYbQnQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="out2">
+      <column comment="" key="false" length="10" name="crash_id" nullable="true" originalLength="10" pattern="" precision="0" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Location_SK" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Time_SK" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Date_SK" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="tot_injury_count" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="tot_death_count" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="pedestrian_injury_count" nullable="true" originalLength="10" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="pedestrian_death_count" nullable="true" originalLength="10" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="pedestrian_condition" nullable="true" originalLength="10" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="motorists_injured" nullable="true" originalLength="10" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="motorists_killed" nullable="true" originalLength="10" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="cyclists_injured" nullable="true" originalLength="10" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="cyclists_killed" nullable="true" originalLength="10" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="out2" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row20.crash_id" name="crash_id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row4.Location_SK" name="Location_SK" type="id_Integer"/>
+        <mapperTableEntries expression="row11.Time_SK" name="Time_SK" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row7.Date_SK" name="Date_SK" type="id_Integer"/>
+        <mapperTableEntries expression="row20.INJURIES_TOTAL " name="tot_injury_count" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row20.INJURIES_FATAL " name="tot_death_count" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="0" name="pedestrian_injury_count" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="0" name="pedestrian_death_count" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="0" name="pedestrian_condition" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="0" name="motorists_injured" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="0" name="motorists_killed" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="0" name="cyclists_injured" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="0" name="cyclists_killed" nullable="true" type="id_Integer"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row20" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="crash_id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="CRASH_RECORD_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="City" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CRASH_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="CRASH_TIME" nullable="true" type="id_String"/>
+        <mapperTableEntries name="crash_hour" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="WEATHER_CONDITION" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LIGHTING_CONDITION" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PRIM_CONTRIBUTORY_CAUSE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SEC_CONTRIBUTORY_CAUSE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="STREET_NAME" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MOST_SEVERE_INJURY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INJURIES_TOTAL" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="INJURIES_FATAL" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="INJURIES_INCAPACITATING" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="INJURIES_NON_INCAPACITATING" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="INJURIES_REPORTED_NOT_EVIDENT" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="INJURIES_NO_INDICATION" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="INJURIES_UNKNOWN" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="LATITUDE" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="LONGITUDE" nullable="true" type="id_Double"/>
+        <mapperTableEntries name="CONTRIBUTING_FACTOR_COMBINED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Code" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Description" nullable="true" type="id_String"/>
+        <mapperTableEntries name="vehicle_type_code_combined" nullable="true" type="id_String"/>
+        <mapperTableEntries name="vehicle_type_code" nullable="true" type="id_Integer"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row11" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="Time_SK" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row20.crash_hour " name="Hour_24" nullable="true" operator="=" type="id_Integer"/>
+        <mapperTableEntries name="Time_Period" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DI_Create_Date" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="DI_WorkflowFileName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ProcessID" nullable="true" type="id_String"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row7" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="Date_SK" type="id_Integer"/>
+        <mapperTableEntries expression="row20.CRASH_DATE " name="Date" nullable="true" operator="=" type="id_Date"/>
+        <mapperTableEntries name="Day_of_Week" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Month" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Year" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Season" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DI_ProcessID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DI_CreationDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="DI_WorkflowFileName" nullable="true" type="id_String"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row4" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="Location_SK" type="id_Integer"/>
+        <mapperTableEntries expression="" name="City" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row20.STREET_NAME " name="Street_Name" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row20.LATITUDE" name="LATITUDE" nullable="true" type="id_Double"/>
+        <mapperTableEntries expression="row20.LONGITUDE" name="LONGITUDE" nullable="true" type="id_Double"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_4"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_TPuMUPVAEe6_cI03PfXi1g"/>
+    <elementParameter field="TEXT" name="HOST" value="context.dim_Location_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.dim_Location_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.dim_Location_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.dim_Location_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.dim_Location_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:c1SdOpkHqCALZOqq5r3je5Cm7YqpqOum94NqA5+p5iVwEQwj9gKp9fKrRCPcFeod5oQGwytJ4/RC"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dim_Location&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from dim_Location&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.dim_Location_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Location_SK"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Street_Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LATITUDE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LONGITUDE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="dim_Location"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_4">
+      <column comment="" defaultValue="" key="false" length="10" name="Location_SK" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="City" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Street_Name" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="LATITUDE" nullable="true" originalLength="20" pattern="" precision="10" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="LONGITUDE" nullable="true" originalLength="20" pattern="" precision="10" sourceType="FLOAT" type="id_Double" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_sZXqIO4VEe6LXupSTK5xZA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="context.db_connection_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.db_connection_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.db_connection_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.db_connection_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.db_connection_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Xr3sV3MJucU84PjvhCFMAJIvpL7zBj0R+YquYm5EOmAVKAMl/V7Mn/JBbytyyegU4SfpZRqN5FmzFw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Load_ChicagoFact&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="crash_id"/>
+    <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.db_connection_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="crash_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Location_SK"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Time_SK"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_SK"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tot_injury_count"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tot_death_count"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pedestrian_injury_count"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pedestrian_death_count"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pedestrian_condition"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="motorists_injured"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="motorists_killed"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cyclists_injured"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cyclists_killed"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="db_connection"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="tDBOutput_1">
+      <column comment="" key="false" length="10" name="crash_id" nullable="true" originalLength="10" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Location_SK" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Time_SK" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Date_SK" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="tot_injury_count" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="tot_death_count" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="pedestrian_injury_count" nullable="true" originalLength="10" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="pedestrian_death_count" nullable="true" originalLength="10" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="pedestrian_condition" nullable="true" originalLength="10" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="motorists_injured" nullable="true" originalLength="10" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="motorists_killed" nullable="true" originalLength="10" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="cyclists_injured" nullable="true" originalLength="10" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="cyclists_killed" nullable="true" originalLength="10" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="out1" name="REJECT">
+      <column comment="" key="false" length="10" name="crash_id" nullable="true" originalLength="10" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Location_SK" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Time_SK" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Date_SK" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="tot_injury_count" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="tot_death_count" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="pedestrian_injury_count" nullable="true" originalLength="10" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="pedestrian_death_count" nullable="true" originalLength="10" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="pedestrian_condition" nullable="true" originalLength="10" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="motorists_injured" nullable="true" originalLength="10" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="motorists_killed" nullable="true" originalLength="10" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="cyclists_injured" nullable="true" originalLength="10" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="cyclists_killed" nullable="true" originalLength="10" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tUniqRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row10"/>
+  </connection>
+  <connection connectorName="UNIQUE" label="row20" lineStyle="0" metaname="tUniqRow_1" offsetLabelX="0" offsetLabelY="0" source="tUniqRow_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row20"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="8" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
+  </connection>
+  <connection connectorName="FLOW" label="row11" lineStyle="8" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row11"/>
+  </connection>
+  <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="8" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7db8cff3-fba2-4458-8999-7775957c175f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>G7MWkrTLXRZR40yOTWkaNLr0GORMel53DEDspUZLorVpgQugrFfBZpiwhv6afdULSuTkNvaYjnII&#13;
+if6xm9wz2A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7e867095-c4a1-44cd-a549-f7d46e6d1da1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>oqTs7noqhMaEc+nCQmF6E4v0MQ3TfPuPDw53p31O/b77WqjwNyQNojaU7iG3/emb8oMZvsrZQgmr&#13;
+D+B3yG/+jg==</DigestValue></Reference></SignedInfo><SignatureValue>nNH8rLIUr+p++ngFOAfuJnhvNCuRypV11kuiRL/034bK7SFgjQ6kJNYFMjvHETVaOjUh9H3dnUAE&#13;
+hp7yiCDgK8ELZob+juH4olNjYsAuXrag9qnOTcfkjj/CTvhL4Q1NvnUri5V2EupGjnNTpcae5uSs&#13;
+WNiZZAy+eUnQr1uOT6GtV/6ExzSNarIbuFzrRJAMhw3N+ZuKth2AK/OAyOScLfYj+xXOz2hL96No&#13;
+1mY2v35ithC7Jlos89EZSTOtQdML4o/9ajsZUlBJi5mEegPaaQpyT4GHQLel7xe+KtYd4I1Yff/u&#13;
+AZDAfUVzUiELX+Un5SglpmMduddOzKqDagEwgg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7e867095-c4a1-44cd-a549-f7d46e6d1da1" Target="#_7db8cff3-fba2-4458-8999-7775957c175f"><Timestamp>2024-04-14 22:39:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
